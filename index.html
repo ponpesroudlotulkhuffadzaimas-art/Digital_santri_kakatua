@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Digital Santri Roudlotul Khuffadz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Digital Pesantren</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: #f4f7f6; }
-        iframe { 
-            position: absolute; 
-            top: 0; left: 0; width: 100%; height: 100%; 
-            border: none; 
-        }
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; background: #f4f7f6; }
+        .loader { border: 5px solid #f3f3f3; border-top: 5px solid #2d8a41; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 0 auto 20px; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbzN1Z2QSG8rPGySgn9hZddMNATeQb3igOcvrDAUJyemRizc0R8n6SJdnJ1hxHJIrZp8Lw/exec"></iframe>
+    <div class="loader"></div>
+    <p>Menghubungkan ke Server Pesantren...</p>
+
+    <script>
+        // MENGGUNAKAN REDIRECT (PENGALIHAN) BUKAN IFRAME
+        // Ini solusi agar semua fitur/tombol bisa diklik di browser biasa & APK
+        window.location.href = "https://script.google.com/macros/s/AKfycbzN1Z2QSG8rPGySgn9hZddMNATeQb3igOcvrDAUJyemRizc0R8n6SJdnJ1hxHJIrZp8Lw/exec";
+    </script>
 </body>
 </html>
